@@ -4,177 +4,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Manager</title>
+    <title>Dhiraj Kumar</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
 </head>
 
 <body>
-    <div class="topnav">
-        <ul>
-            <li class="brand">Contact Manager</li>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Help</a></li>
-            <li class="icon"><a href="#" style="font-size:16px;"><i class="fa fa-bars"></i></a>
-                <div class="dropdown-content">
-                    <a href="#">Home</a>
-                    <a href="#">About Us</a>
-                    <a href="#">Help</a>
-                </div>
-            </li>
-        </ul>
-
-    </div>
     <div class="container">
-        <div class="row">
-            <div class="col-5">
-                <div class="panel">
-                    <form>
-                        <label for="fname">Name</label>
-                        <input type="text" id="fname" placeholder="Name">
-
-                        <label for="gender">Gender</label>
-                        <select id="gender">
-                            <option value="--Select Gender--">--Select Gender--</option>
-                            <option value="Male">Male</option>
-                            <option value="Female">Female</option>
-                        </select>
-
-                        <label for="email">Email</label>
-                        <input type="text" id="email" placeholder="Email">
-
-                        <label for="phone">Phone</label>
-                        <input type="text" id="phone" placeholder="Phone">
-
-                        <input type="submit" value="Add Contact">
-                    </form>
-                </div>
+        <div class="navbar">
+            <span class="brand"> <span style="color: rgb(231, 19, 19);">Dhiraj</span><span>Kumar</span></span>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Client</a></li>
+                <li><a href="#">Recent</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <span><i class="fas fa-donate"></i> Donate</span>
+        </div>
+        <div class="intro">
+            <div class="intro-image">
+                <!-- <img class="model" src="images/model.jpg" alt="model"> -->
+                <img class="model" src="images/model.svg" alt="">
             </div>
-            <div class="col-7">
-                <h1>Contacts (Cards View)</h1>
-                <p>Hover the mouse on card to see details</p>
-                <div class="row">
-                    <div class="col-3">
-                        <div class="contact-card">
-                            <div class="contact-card-inner">
-                                <div class="contact-card-front">
-                                    <img src="images/avatar2.png" alt="Avatar" style="width:100%;">
-                                    <div class="overlay">Peter Parker</div>
-                                </div>
-                                <div class="contact-card-back">
-                                    <h1>Peter Parker</h1>
-                                    <p>&#9993; Peter@gmail.com</p>
-                                    <p>&phone; 547-165-3466</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="contact-card">
-                            <div class="contact-card-inner">
-                                <div class="contact-card-front">
-                                    <img src="images/avatar1.png" alt="Avatar" style="width:100%;">
-                                    <div class="overlay">James Cameron</div>
-                                </div>
-                                <div class="contact-card-back">
-                                    <h1>James Cameron</h1>
-                                    <p>&#9993; James@gmail.com</p>
-                                    <p>&phone; 234-456-6790</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="contact-card">
-                            <div class="contact-card-inner">
-                                <div class="contact-card-front">
-                                    <img src="images/avatar3.png" alt="Avatar" style="width:100%;">
-                                    <div class="overlay">Maria Hill</div>
-                                </div>
-                                <div class="contact-card-back">
-                                    <h1>Maria Hill</h1>
-                                    <p>&#9993; Maria@gmail.com</p>
-                                    <p>&phone; 344-124-3578</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="contact-card">
-                            <div class="contact-card-inner">
-                                <div class="contact-card-front">
-                                    <img src="images/avatar4.jpg" alt="Avatar" style="width:100%;">
-                                    <div class="overlay">John Parry</div>
-                                </div>
-                                <div class="contact-card-back">
-                                    <h1>John Parry</h1>
-                                    <p>&#9993; John@gmail.com</p>
-                                    <p>&phone; 289-194-6789</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="intro-text">
+                <h1>Hello, I am Dhiraj</h1>
+                <p>Hey, Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eum voluptas asperiores natus
+                    perspiciatis et alias, quod harum aliquam provident</p>
+                <button class="btn-portfolio">See My Portfolio</button>
             </div>
         </div>
-        <div class="row">
-            <!-- <div class="col-5">
-
-            </div> -->
-            <div class="col-12">
-                <h1>Contacts (Table View)</h1>
-                <table>
-                    <tr>
-                        <th></th>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Phone</th>
-                    </tr>
-                    <tr>
-                        <td><img src="images/avatar1.png"></td>
-                        <td>Peter Parker</td>
-                        <td>Peter@gmail.com</td>
-                        <td>547-165-3466</td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/avatar2.png"></td>
-                        <td>James Cameron</td>
-                        <td>James@gmail.com</td>
-                        <td>234-456-6790</td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/avatar3.png"></td>
-                        <td>Maria Hill</td>
-                        <td>Maria@gmail.com</td>
-                        <td>344-124-3578</td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/avatar4.jpg"></td>
-                        <td>John Parry</td>
-                        <td>John@gmail.com</td>
-                        <td>289-194-6789</td>
-                    </tr>
-                </table>
+        <div class="recent-projects">
+            <p>Recent Projects</p>
+            <img class="projectpic" src="images/projects.png" alt="">
+            <button class="btn-portfolio">View Designs</button>
+        </div>
+        <p>My Expertise</p>
+        <div class="expertise">
+            <div class="skills">
+                <img src="images/html_logo.png" alt="">
+                <div>
+                    <h3>Hyper Text Markup Language (HTML)</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod nostrum harum officia tempora
+                        deleniti eaque sit numquam, ea quaerat error</p>
+                </div>
+                <img src="images/css_logo.png" alt="">
+                <div>
+                    <h3>Cascading Stylesheets (CSS)</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, sed dolorum eos aliquid ipsam
+                        maxime.</p>
+                </div>
+                <img src="images/JS_logo.png" alt="">
+                <div>
+                    <h3>JavaScript Language (JS)</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus doloribus voluptates eaque
+                        consectetur commodi provident.</p>
+                </div>
+                <img src="images/Angular_logo.png" alt="">
+                <div>
+                    <h3>Angular</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi a corrupti fugit minus
+                        voluptatem eos.</p>
+                </div>
+                <img src="images/node_logo.png" alt="">
+                <div>
+                    <h3>NodeJS</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet doloremque optio natus, sit
+                        nostrum magni.</p>
+                </div>
+            </div>
+            <div class="expertise-pic">
+                <img src="images/experties.png" alt="">
             </div>
         </div>
-    </div>
-    <div class="footer">
-        <div>
-            <p>Copyright ContactManager &copy; 2020</p>
-            <p class="multicol">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sunt quod illo fugit
-                doloremque amet
-                ratione voluptatibus voluptates hic culpa, non minus beatae quasi? Enim atque quod optio
-                exercitationem vero. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur fugit
-                blanditiis saepe illo quaerat. Assumenda molestias quidem sunt voluptas, iure ipsam numquam facilis
-                pariatur fugiat eius repellat culpa? Aliquam, perferendis? Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Repellat qui dignissimos deserunt excepturi eligendi quo consequuntur! Facilis
-                neque quidem cumque iusto eaque, aliquam animi dolor nemo ab autem? Ratione, vel. Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Omnis libero dolore, ratione natus deleniti ad numquam, iste ab
-                labore eveniet ut perferendis nobis est corporis aperiam nam atque doloremque quam! Lorem ipsum dolor
-                sit amet consectetur adipisicing elit. Molestias cumque esse eum ut nulla vero sit beatae! Rem ipsa vero
-                libero quae, corporis consequuntur fugit ipsum quis ullam voluptatum veritatis!
-            </p>
+        <p>Client's Feedback</p>
+        <div class="testimonials">
+            <div class="card">
+                <img src="images/profile-pic1.png" alt="">
+                <h2>Maria Anders</h2>
+                <p class="rating">
+                    <img src="images/5star.png" alt="">
+                </p>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, explicabo. Pariatur perspiciatis a
+                    corporis ut eligendi ipsum explicabo architecto, soluta illum iste. Dolor rerum id quis voluptas
+                    tempore similique ex!
+                </p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="card">
+                <img src="images/profile-pic2.png" alt="">
+                <h2>Peter Parker</h2>
+                <p class="rating">
+                    <img src="images/5star.png" alt="">
+                </p>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, explicabo. Pariatur perspiciatis a
+                    corporis ut eligendi ipsum explicabo architecto, soluta illum iste. Dolor rerum id quis voluptas
+                    tempore similique ex!
+                </p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="card">
+                <img src="images/profile-pic3.jpg" alt="">
+                <h2>Tony Stark</h2>
+                <p class="rating">
+                    <img src="images/5star.png" alt="">
+                </p>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla doloribus vero rerum fugit nam!
+                    Itaque fugiat illum, velit molestias, et ipsa impedit facere, laudantium nulla accusamus ratione
+                    laboriosam consequatur vel.
+                </p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+        <div class="contact">
+            <img src="images/contact.svg" alt="">
+            <p>Get the Best Project Estimation</p>
+            <div class="form">
+
+                <input type="text"><button class="btn-portfolio">Submit</button>
+            </div>
         </div>
     </div>
 </body>
